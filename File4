@@ -1,0 +1,69 @@
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java World!");
+        
+        // Create a Calculator object
+        Calculator calc = new Calculator();
+        
+        // Perform some calculations
+        int sum = calc.add(5, 3);
+        int difference = calc.subtract(10, 4);
+        double product = calc.multiply(2.5, 4);
+        double quotient = calc.divide(15, 4);
+        
+        // Print results
+        System.out.println("5 + 3 = " + sum);
+        System.out.println("10 - 4 = " + difference);
+        System.out.println("2.5 * 4 = " + product);
+        System.out.println("15 / 4 = " + quotient);
+        
+        // Demonstrate a loop
+        System.out.println("\nCounting from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+        
+        // Demonstrate conditional logic
+        System.out.println("\nChecking if numbers are even:");
+        int[] numbers = {2, 5, 8, 11, 14};
+        for (int num : numbers) {
+            if (calc.isEven(num)) {
+                System.out.println(num + " is even");
+            } else {
+                System.out.println(num + " is odd");
+            }
+        }
+    }
+}
+
+// Calculator.java
+class Calculator {
+    // Add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    // Subtract two integers
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+    
+    // Multiply two doubles
+    public double multiply(double a, double b) {
+        return a * b;
+    }
+    
+    // Divide two doubles
+    public double divide(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return a / b;
+    }
+    
+    // Check if a number is even
+    public boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
