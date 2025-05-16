@@ -1,0 +1,11 @@
+CI/CD: Continuous Integration & Continuous Delivery
+
+Infrastructure as Code (IaC): Managing infrastructure through code
+
+Monitoring & Logging: Real-time system insights
+
+Microservices: Architecture for scalable systems
+
+Cloud Computing: Leveraging cloud platforms
+
+Automation: Eliminating manual processes
